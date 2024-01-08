@@ -1,31 +1,68 @@
 <!-- index.html -->
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-  <div class="container">
-    <header>
-        <h1>Nadav Hershko</h1>
-    </header>
-  </div>
+  <header>
+      <h1>Nadav Hershko</h1>
+  </header>
 
-    <img src="/assets/Dev.jpg" alt="Background" style="width:100%">
-   
-    <nav>
-        <button id="homeBtn">Home</button>
-        <button id="aboutBtn">About</button>
-        <button id="contactBtn">Contact</button>
-        <button id="resumeBtn">Resume</button>
-    </nav>
+  <div class="background-container">
+    <div class="sidebar">
+      <li>
+        <button id="homeBtn" class="sidebar-button">Home</button>
+        <button id="aboutBtn" class="sidebar-button">About</button>
+        <button id="contactBtn" class="sidebar-button">Contact</button>
+        <button id="resumeBtn" class="sidebar-button">Resume</button>
+      </li>
+    </div>
 
-    <section id="content"></section>
+    <!-- <div id="homeBtn">
+      <h2>homeBtn</h2>
+      <p>Click on the link to see the "smooth" scrolling effect.</p>
+      <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+      <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+    </div> -->
+  <!-- <div class="background-container">
+    
+    <div class="sidebar">
+      <button id="homeBtn">Home</button>
+      <button id="aboutBtn">About</button>
+      <button id="contactBtn">Contact</button>
+      <button id="resumeBtn">Resume</button>
+    </div> -->
 
-    <script src="script.js"></script>
+   <section id="content"> </section>
+  </div> <!-- Close the background-container div here -->
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+<!-- <div id="content" class="content"></div> -->
+
+      <!-- <div class="content">
+        <h1>Your Huge Text Here</h1>
+        <p>Additional text or content goes here.</p>
+      </div>
+    </div> -->
+    
+    <!-- <div class="Dev">
+      <img src="/assets/Dev.jpg" alt="Dev">
+    </div> -->
+   
+  
+
+    
+

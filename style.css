@@ -1,32 +1,121 @@
-/* styles.css */
-* {
-  background-image: url('/assets/Dev.jpg');
-  background-size: cover;  /* Cover the entire background */
-}
+/* style.css */
+
 
 body {
-  /* background-image: url('/assets/Dev.jpg');
-  background-size: cover;  Cover the entire background */
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-color: black;
-  color: white;
-  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
+  background-color: white;
 }
 
-nav {
-  text-align: left;
-  position: fixed;
+.background-container {
+  display: flex; /* Use flexbox to allow the sidebar and content to grow */
+  position: relative;
+  height: 100vh;
+  background: url('/assets/Dev.jpg') center/cover no-repeat;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* 40% opaque black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7); /* Text color with alpha channel for transparency */
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+button:hover {
+  background-color: gray;
+  color: black;
+}
+
+.content {
+  flex-grow: 1;
+  position: relative;
+}
+
+.content {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  margin: 20px;
+  width: 40%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* 40% opaque black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+#content {
+    flex-grow: 1; /* Allow content to grow and take available space */
+    padding: 20px; /* Add padding to the content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    overflow: auto; /* Add scrollbars if content overflows vertically */
+}
+
+h1, p {
+  color: rgba(255, 255, 255, 0.7); /* Text color with alpha channel for transparency */
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px; /* Adjust the font size as needed */
+  margin: 0; /* Remove default margin for h1 */
+  color: black;
+}
+
+p {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+}
+
+#section2 {
+  height: 600px;
+}
+
+
+
+/* body {
+  background-color: white;
+  color: black;
+  font-family: 'Arial', sans-serif;
+} */
+
+/* header {
+  text-align: center;
+  padding: 20px;
+} */
+
+/* nav {
+  text-align: center;
+  margin: 20px;
+} */
 
 button {
   background-color: black;
@@ -35,14 +124,5 @@ button {
   padding: 10px 20px;
   margin: 5px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: white;
-  color: black;
-}
-
-#content {
-  padding: 20px;
 }
 
